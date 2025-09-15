@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@angular/core"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="bg-white shadow-md p-2 flex justify-between items-center text-base">
+       
+      <span class="separator"></span>
+      <span class="separator"></span>
+
+
+  
+        <img 
+        
+          src="/assets/15443340-D5E8-4BC2-87C3-91F26156E6A8_4_5005_c.jpeg" 
+          alt="Logo" 
+          class="logo"
+        />
+    
+        <div class="flex items-center w-1/2 relative">
+            <!-- Search Icon -->
+            <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.35-4.35" />
+              </svg>
+            </span>
+            
+            <!-- Input Box -->
+            <input 
+              type="text" 
+              style="background-color: rgba(228, 235, 247, 0.79);"
+              placeholder="Search for Products, Brands, and More" 
+              class="border border-gray-300 rounded-lg pl-12 pr-3 py-2 w-full focus:outline-none focus:ring focus:ring-blue-200" 
+            />
+          </div>
+        
+            <div class="flex space-x-4 items-center">
+                <!-- User Icon -->
+                <img 
+                  src="/assets/user.png" 
+                  alt="User Icon" 
+                  class="w-6 h-6" 
+                />
+                <a [routerLink]="'/login'" class="text-gray-600 hover:text-blue-500 font-medium">Login</a>
+                
+                <span class="separator"></span>
+                <!-- Cart Icon with Hover Effect -->
+                <img 
+                  
+                src="/assets/icons8-cart.gif" 
+                alt="User Icon" 
+                class="w-6 h-6" 
+                />
+                <button class="text-gray-600 hover:text-blue-500 font-medium">Cart</button>
+                <span class="separator"></span>
+                <img 
+                  
+                src="/assets/seller.png" 
+                alt="User Icon" 
+                class="w-6 h-6" 
+                />
+                
+                <button class="text-gray-600 hover:text-blue-500 font-medium">Become a Seller</button>
+                
+                <span class="separator"></span>
+              </div>
+         
+              <style>
+                .custom-icon {
+                  font-size: 24px; /* Normal size for the icon */
+                }
+              </style>
+              
+              <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon class="custom-icon">more_vert</mat-icon>
+              </button>
+              
+                
+            
+  </nav>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+    background-color: #f8f8f8;
+}
+.image-wrapper {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 21px;
+    max-height: 150px
+    
+}
+.image-item {
+    text-align: center;
+}
+.image-item img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+</style>
+
+<body>
+<div class="image-container">
+<div class="image-wrapper">
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/78E51162-9439-40E7-9FCE-8678F70D9AC3_4_5005_c.jpeg" alt="Grocery">
+    <p>Grocery</p>
+  </div>
+  <span class="separator"></span>
+  
+
+  <div class="image-item">
+    <img src="/assets/image copy.png" alt="Mobiles">
+    <p>Mobiles</p>
+  </div>
+  
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/A6CBC4B5-D300-4779-ACBE-8DCB1DD011F1_4_5005_c.jpeg" alt="Fashion">
+    <p>Fashion</p>
+  </div>
+
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/image copy 3.png" alt="Electronics">
+    <p>Electronics</p>
+  </div>
+ 
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/ADA7C459-B23B-4DB4-AD38-375B4CF6EFAE_1_201_a.jpeg" alt="Home & Furniture">
+    <p>Home & Furniture</p>
+  </div>
+
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/image copy 5.png" alt="Appliances">
+    <p>Appliances</p>
+  </div>
+
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/image copy 6.png" alt="Flight Bookings">
+    <p>Flight Bookings</p>
+  </div>
+
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/image copy 7.png" alt="Beauty, Toys & More">
+    <p>Beauty, Toys & More</p>
+  </div>
+
+  <span class="separator"></span>
+  <div class="image-item">
+    <img src="/assets/image copy 8.png" alt="Two Wheelers">
+    <p>Two Wheelers</p>
+  </div>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+  <span class="separator"></span>
+</div>
+</div>
+
+<div class="image-container">
+<div class="banner-slider-container">
+  <div class="banner-slider" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+    <div class="banner" *ngFor="let banner of banners">
+      <img [src]="banner.image" [alt]="banner.alt" class="banner-image" />
+    </div>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="arrow left" (click)="prevBanner()">&#10094;</button>
+  <button class="arrow right" (click)="nextBanner()">&#10095;</button>
+
+  <!-- Navigation Dots -->
+  <div class="dots">
+    <span 
+      class="dot" 
+      *ngFor="let banner of banners; index as i" 
+      [class.active]="i === currentIndex"
+      (click)="goToBanner(i)"></span>
+  </div>
+</div>
+
+<style>
+.banner-slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.banner-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.banner {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.banner-image {
+  width: 100%;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:white;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: white;
+}
+</style>
+</div>
+
+<div class="best-electronics-container">
+  <h2>Best of Electronics</h2>
+
+  <div class="products-wrapper"> <!-- White container -->
+    <div class="products-grid">
+      <div class="product-card" *ngFor="let product of products">
+        <div class="product-content">
+          <img [src]="product.image" [alt]="product.name">
+          <p class="product-name">{{ product.name }}</p>
+
+          <div class="price-section">
+            <span class="discounted-price">₹{{ product.discountedPrice.toLocaleString('en-IN') }}</span>
+            <span class="original-price">₹{{ product.originalPrice.toLocaleString('en-IN') }}</span>
+            <span class="discount-percentage">{{ getDiscountPercentage(product.originalPrice, product.discountedPrice) }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+
+
+
+
+
