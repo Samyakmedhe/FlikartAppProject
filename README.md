@@ -1,6 +1,25 @@
 # FlikartAppProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+FlikartAppProject is an Angular-based e-commerce style application inspired by Flipkart. The aim is to replicate core functionality of an online marketplace—product browsing, filtering, cart management—while using modern frontend practices.
+
+---
+
+## Features
+
+- Browse product listings with images, names, and prices  
+- View details of a selected product  
+- Add / remove products to/from shopping cart  
+- Responsive design: works well on desktop, tablet, and mobile  
+- Filtering and sorting options for product lists  
+- Interactive UI with clean component structure  
+
+---
+
+<img width="1707" height="758" alt="LoginPage" src="https://github.com/user-attachments/assets/efc2f0be-d447-4176-b7b1-27a7301b2710" />
+
+
+<img width="1704" height="980" alt="FrontPage " src="https://github.com/user-attachments/assets/f632584d-e6ba-4ee9-a148-5857b410cf05" />
+
 
 ## Development server
 
@@ -8,7 +27,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component.
 
 ## Build
 
