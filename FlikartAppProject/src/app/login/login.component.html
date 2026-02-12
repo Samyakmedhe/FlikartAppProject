@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@angular/core"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="bg-blue-600 shadow-md p-3 flex justify-between items-center text-base">
+
+      <span class="separator"></span>
+      
+        <img 
+          src="/assets/FBCA8983-F99B-4756-96AD-2B8468B174D0_4_5005_c.jpeg" 
+          alt="Logo" 
+          class="logo"
+        />
+      
+        <div class="flex items-center w-1/3 relative">
+          <!-- Search Icon -->
+          <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.35-4.35" />
+            </svg>
+          </span>
+          
+          <!-- Input Box -->
+          <input 
+            type="text" 
+            placeholder="Search for Products, Brands, and More" 
+            class=" pl-12 pr-4 py-1 w-full " 
+          />
+        </div>
+      
+        <div class="flex space-x-4 items-center">
+          <!-- User Icon -->
+          <button type="button" class="btn btn-light "
+        style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x:4rem; --bs-btn-font-size: .9rem; color: blue ; font-style: inherit;">
+          Login
+</button>
+        
+          
+          <span class="separator"></span>
+          <!-- Cart Icon -->
+         
+          <span class="separator"></span>
+
+          <button class="text-white hover:text-gray-200 font-medium">Become a Seller</button>
+          <span class="separator"></span>
+     
+          <button class="text-white hover:text-gray-200 font-medium">More ⌄</button>
+          <span class="separator"></span>
+
+          <img src="/assets/image.png" alt="Cart Icon" class="w-6 h-6" />
+          <button class="text-white hover:text-gray-200 font-medium">Cart</button>
+          <span class="separator"></span>
+          <span class="separator"></span>
+          <span class="separator"></span>
+          <span class="separator"></span>
+          <span class="separator"></span>
+          <span class="separator"></span>
+          <span class="separator"></span>
+          <span class="separator"></span>
+          <span class="separator"></span>
+
+
+        </div>
+      </nav>
+      
+<!-- Main Content -->
+<div class="login-container">
+  <!-- Left Section -->
+  <div class="login-left">
+    <h1 class="login-title">Login</h1>
+    <p class="login-description">
+      Get access to your Orders, Wishlist and Recommendations
+    </p>
+    <span class="separator"></span>
+    <span class="separator"></span>
+    <img
+  src="/assets/Screenshot 2025-01-28 at 2.20.13 PM.png"
+  alt="Login Illustration"
+  class="login-image"
+  style="width: 200px; height: auto;"
+/>
+
+  </div>
+
+  <!-- Right Section -->
+  <div class="login-right">
+    <form class="login-form" (ngSubmit)="sendOTP()">
+      <mat-form-field appearance="fill" class="custom-textbox">
+        <mat-label>Enter Email/Mobile number</mat-label>
+        <input matInput placeholder=" " [(ngModel)]="userInput" name="userInput" required>
+      </mat-form-field>
+    
+      <p class="login-terms">
+        By continuing, you agree to Flipkart's
+        <a href="#" class="login-link">Terms of Use</a> and
+        <a href="#" class="login-link">Privacy Policy</a>.
+      </p>
+    
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        mat-raised-button
+        class="btn-submit"
+        style="background-color: #ff6a00; color: white;"
+      >
+        Request OTP
+      </button>
+    </form>
+    
+    <!-- OTP verification input appears after OTP sent -->
+    <div *ngIf="otpSent" class="otp-container mt-4">
+      <mat-form-field appearance="fill" class="custom-textbox w-full">
+        <mat-label>Enter OTP</mat-label>
+        <input matInput placeholder=" " [(ngModel)]="otp" name="otp" required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="verify-btn" (click)="verifyOTP()">
+        Verify OTP
+      </button>
+    </div>
+    
+    <p class="text-red-500 mt-2">{{ message }}</p>
+
+    <!-- New Account Link -->
+    <p class="create-account">
+      New to Flipkart? <a href="#" class="login-link">Create an account</a>
+    </p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer bg-gray-900 text-white py-8">
+  <div class="footer-section container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div>
+      <h3 class="font-semibold text-sm mb-4">ABOUT</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Contact Us</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">About Us</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Careers</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Flipkart Stories</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Press</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-sm mb-4">HELP</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Payments</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Shipping</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Cancellation & Returns</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-sm mb-4">CONSUMER POLICY</h3>
+      <ul>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Cancellation & Returns</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Terms Of Use</a></li>
+        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Privacy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-sm mb-4">Mail Us</h3>
+      <address class="text-gray-400 text-sm">
+        Flipkart Internet Pvt Ltd,<br />
+        Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br />
+        Bengaluru, 560103,<br />
+        Karnataka, India
+      </address>
+    </div>
+  </div>
+</footer>

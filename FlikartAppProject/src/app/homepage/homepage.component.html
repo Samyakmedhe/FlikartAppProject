@@ -1,0 +1,12 @@
+<div class="container">
+    <h3>Best of Electronics</h3>
+    <div class="row">
+      <app-product-card
+        *ngFor="let product of electronics"
+        [title]="product.title"
+        [price]="product.price"
+        [image]="product.image">
+      </app-product-card>
+    </div>
+  </div>
+  

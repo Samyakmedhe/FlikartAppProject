@@ -1,0 +1,223 @@
+nav {
+    .logo {
+      height: 35px; /* Adjust the logo size */
+      width: auto;  /* Maintain aspect ratio */
+    }
+    input::placeholder {
+      color: rgb(99, 91, 91); /* Set placeholder text color to black */
+      opacity: 1; /* Ensure full visibility */
+    }
+    input {
+      border: 1px solid #ddd;
+      &:focus {
+        outline: none;
+        ring: 2px solid #3b82f6;
+      }
+    }
+    
+    button {
+      transition: color 0.2s;
+    }
+  
+    button:hover {
+      color: #3b82f6;
+    }
+  }
+  
+  .logo {
+    size: 24px;
+    font-weight: bold;
+    color: #e94b4b;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  /* Left section (blue area) */
+  .left-section {
+    width: 35%;
+    background-color: #1976d2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .illustration {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  /* Right section (form area) */
+  .right-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .terms {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .link {
+    color: #1976d2;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .btn {
+    background-color: #ff6a00;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: #e65a00;
+  }
+  
+  .footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .card {
+    width: 200px;  /* Adjust width as needed */
+    margin: 10px;
+    text-align: center;
+  }
+  
+
+  .best-electronics-container {
+    width: 100%;
+    padding: 50px;
+    overflow: hidden;
+  }
+  
+ 
+
+  .slick-track {
+    display: flex !important;
+    flex-direction: row !important; /* Forces horizontal alignment */
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .product-card {
+   
+    background: white;
+    
+    text-align: center;
+    flex: 0 0 auto; /* Prevents stacking */
+    margin-right: 10px;
+  }
+  
+ 
+  
+  .price-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .discounted-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .original-price {
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through;
+  }
+  
+  .discount-percentage {
+    font-size: 1.2em;
+    color: green;
+    font-weight: bold;
+  }
+  .products-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    gap: 16px; /* Adjust spacing between items */
+  }
+  
+  .product-card {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 250px; /* Set a fixed width for each card */
+  }
+  .products-wrapper {
+    background-color: white; /* White background */
+    padding: 10px; /* Add spacing inside the container */
+    border-radius: 1px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Keep products in a single line */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 16px; /* Space between product cards */
+  }
+  
+  .product-card {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 250px; /* Set a fixed width */
+  }
+  
